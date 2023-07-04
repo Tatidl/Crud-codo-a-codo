@@ -19,7 +19,7 @@ crossorigin="anonymous">
 </header>
 
 <main>
-    <div id="app" class="container">
+    <div id="app" class="container text-center">
         <br>
         <div class="text-center">
          <a class="btn btn-warning" href="producto_nuevo.html">Nueva</a> 
@@ -41,7 +41,7 @@ crossorigin="anonymous">
               <p class="boton-calificacion">Calificación: {{producto.calificacion}}</p>
             </div>
             <div class="text-center">
-            <a class="btn btn-secondary" :href="'./producto_update.html?id='+ producto.id" >Editar</a>
+            <a class="btn btn-secondary" :href="'./producto_editar.html?id='+ producto.id" >Editar</a>
             <button type="button" class="btn btn-secondary mx-2" v-on:click="eliminar(producto.id)" >Eliminar</button>
             </div>
         </div>
