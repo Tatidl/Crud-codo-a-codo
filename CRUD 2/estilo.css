@@ -9,6 +9,10 @@
     padding: 0; 
 }
 
+body{
+  height: 100%;
+}
+
 header{
   background-color: #816797;
   padding: 8px;

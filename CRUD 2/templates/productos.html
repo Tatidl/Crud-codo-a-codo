@@ -24,17 +24,10 @@ crossorigin="anonymous">
         <div class="text-center">
          <a class="btn btn-warning" href="producto_nuevo.html">Nueva</a> 
          </div>
-         <br><br>
-         <div v-if="error">
-         <p>Lo sentimos , ........</p>
-         </div>
-         <div v-else>
-         <section v-if="cargando">
-         <div class="spinner-border"></div>
-         <p>Cargando .....</p>
-         </section>
+         
 
-         <section v-else>
+        
+         <section v-else style="width: auto;">
             <div class="box1" v-for="producto in productos">
              <div id="app">
                <img :src="producto.imagen" alt="producto.nombre" class="imagen"> <!--me faltaria ver esto -->
@@ -48,10 +41,13 @@ crossorigin="anonymous">
               <p class="boton-calificacion">Calificación: {{producto.calificacion}}</p>
             </div>
             <div class="text-center">
-            <a class="btn btn-secondary mr-2" :href="'./producto_update.html?id='+ producto.id" >Editar</a>
+            <a class="btn btn-secondary" :href="'./producto_update.html?id='+ producto.id" >Editar</a>
             <button type="button" class="btn btn-secondary mx-2" v-on:click="eliminar(producto.id)" >Eliminar</button>
             </div>
+        </div>
        </section>
+  
+
 </main>
 
 <footer>
