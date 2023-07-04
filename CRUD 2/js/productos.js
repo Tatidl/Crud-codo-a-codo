@@ -58,7 +58,7 @@ redirect: 'follow'
 fetch(this.url, options)
 .then(function () {
 alert("Registro grabado")
-window.location.href = "/CRUD 2/templates/productos.html";
+window.location.href = "/templates/productos.html";
 })
 .catch(err => {
 console.error(err);
