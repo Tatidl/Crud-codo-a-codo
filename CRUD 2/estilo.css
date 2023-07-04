@@ -1,0 +1,101 @@
+/* GRIS #1B2430  
+ VIOLETA OPACO #51557E
+ MORADO #816797
+ BEIGE #D6D5A8 */
+
+ *{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0; 
+}
+
+header{
+  background-color: #816797;
+  padding: 8px;
+  
+}
+
+.titulo{
+  font-family: 'Poppins', sans-serif;
+  color: #E7B10A;
+  text-align: center;
+  
+}
+
+main{
+  background-color: #1B2430;
+}
+
+
+.box1{
+    display: inline-block;
+    padding: 20px;
+    margin: 50px;
+    background-color: #D6D5A8;
+    width: 320px;
+    height: 460px; 
+    align-items: center;
+    border-radius:10px;
+}
+
+.imagen{
+    width: 300px;
+    height: 165px;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    border-radius: 20px;
+    margin: 10px auto;
+    display: block;
+}
+
+.nombre-serie{
+  border: none;
+  border-radius: 100px;
+  padding: 5px 25px;
+  color:#020203;
+  background: linear-gradient(to left,#a8aac6,#51557E);
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-family: 'Prompt', sans-serif;
+  font-size: 20px;
+}
+
+.descripcion-serie{ 
+  margin:12px 0px 14px 0px;
+  text-align: center;
+  font-size: 15px;
+  background-color: #D6D5A8;
+  font-family: 'Prompt', sans-serif;
+}
+
+
+.boton-calificacion{ 
+    margin: 15px auto;
+    align-items: center;
+    display: block;
+    border: none;
+    border-radius: 100px;
+    padding: 9px 30px;
+    color:#020203;
+    background: linear-gradient(to left,#a8aac6,#51557E);
+    font-family: 'Prompt', sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+
+.btn-danger{
+  background: #650094;
+}
+
+footer{
+  background-color: #816797;
+  padding: 10px;
+}
+
+.integrantes{
+  font-family:'Poppins', sans-serif;
+  color: #E7B10A;
+  text-align: center;
+}

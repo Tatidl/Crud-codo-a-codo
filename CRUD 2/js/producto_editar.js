@@ -8,9 +8,11 @@ return {
 id:0,
 nombre:"",
 imagen:"",
-stock:0,
-precio:0,
-url:'http://fraic818.pythonanywhere.com/productos/'+id,
+anio:0,
+calificacion:0,
+genero:"",
+temporadas:0,
+url:'http://fraic818.pythonanywhere.com/series/'+id,
 }
 },
 methods: {
@@ -21,10 +23,12 @@ fetch(url)
 
 console.log(data)
 this.id=data.id
-this.nombre = data.nombre;
+this.nombre=data.nombre;
 this.imagen=data.imagen
-this.stock=data.stock
-this.precio=data.precio
+this.anio=data.anio
+this.calificacion=data.calificacion
+this.genero=data.genero
+this.temporadas=data.temporadas
 })
 .catch(err => {
 console.error(err);
@@ -34,9 +38,11 @@ this.error=true
 modificar() {
 let producto = {
 nombre:this.nombre,
-precio: this.precio,
-stock: this.stock,
-imagen:this.imagen
+anio:this.anio,
+calificacion:this.calificacion,
+genero:this.genero,
+temporadas:this.temporadas,
+imagen:this.imagen,
 }
 var options = {
 body: JSON.stringify(producto),
@@ -47,7 +53,7 @@ redirect: 'follow'
 fetch(this.url, options)
 .then(function () {
 alert("Registro modificado")
-window.location.href = "../templates/productos.html";
+window.location.href = "/CRUD 2/templates/productos.html";
 })
 .catch(err => {
 console.error(err);

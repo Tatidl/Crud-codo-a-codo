@@ -3,15 +3,17 @@ createApp({
 data() {
 return {
 productos:[],
-url:'http://fraic818.pythonanywhere.com/productos', 
+url:'http://fraic818.pythonanywhere.com/series', 
 error:false,
 cargando:true,
 /*atributos para el guardar los valores del formulario */
 id:0,
 nombre:"",
 imagen:"",
-stock:0,
-precio:0,
+anio:0,
+calificacion:0,
+genero:"",
+temporadas:0,
 }
 },
 methods: {
@@ -41,9 +43,11 @@ location.reload();
 grabar(){
 let producto = {
 nombre:this.nombre,
-precio: this.precio,
-stock: this.stock,
-imagen:this.imagen
+anio:this.anio,
+calificacion:this.calificacion,
+genero:this.genero,
+temporadas:this.temporadas,
+imagen:this.imagen,
 }
 var options = {
 body:JSON.stringify(producto),
@@ -54,7 +58,7 @@ redirect: 'follow'
 fetch(this.url, options)
 .then(function () {
 alert("Registro grabado")
-window.location.href = "../templates/productos.html";
+window.location.href = "/CRUD 2/templates/productos.html";
 })
 .catch(err => {
 console.error(err);
