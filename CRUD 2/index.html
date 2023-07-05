@@ -9,7 +9,7 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
 crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="/estilo.css">
+<link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
@@ -41,7 +41,7 @@ crossorigin="anonymous">
               <p class="boton-calificacion">Calificación: {{producto.calificacion}}</p>
             </div>
             <div class="text-center">
-            <a class="btn btn-secondary" :href="'./templates/producto_editar.html?id='+ producto.id" >Editar</a>
+            <a class="btn btn-secondary" :href="'.templates/producto_editar.html?id='+ producto.id" >Editar</a>
             <button type="button" class="btn btn-secondary mx-2" v-on:click="eliminar(producto.id)" >Eliminar</button>
             </div>
         </div>
@@ -73,6 +73,6 @@ crossorigin="anonymous"</script>
 integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
 crossorigin="anonymous"></script>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
-<script src="/js/productos.js"></script>
+<script src="js/productos.js"></script>
 </body>
 </html>
